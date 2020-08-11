@@ -5,9 +5,14 @@ $(document).ready(function(){
         nextArrow:'<div class="nextArrow arrow"></div>',
     });
     
-    $(".topBtn").click(function(){
-          $("window").scrollTop(0);
-            });
+    /*탑버튼*/        
+    $(".topBtn").click(function() {
+        $('html, body').animate({
+            scrollTop : 0
+        }, 400);
+        return false;
+    });
+
     
 jQuery(window).scroll(startCounter);
 function startCounter() {
