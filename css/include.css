@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/*헤더*/
+#header{line-height: 40px; padding: 10px 0; height: 40px;position: absolute; left: 50%; margin-left: -600px;}
+#header h1{float: left;}
+.gnb{float: right;width: auto;}
+.gnb li{float: left;text-align: center;font-weight:300; margin-left: 200px;}
+.gnb li a{color: #000;}
+
+/*푸터*/
+#footer{border-top: 1px solid rgba(0,0,0,0.2); text-align: center;}
+#footer p{margin: 40px 0; font-family: 'NanumMyeongjo'; font-weight: 900;}
+
+.topBtn{border: 1px solid; display:block; height: 50px; width: 55px; background: url(../images/fArrow.png) no-repeat 50% 30px; padding-top: 50px; text-align: center; border-radius:40px; color: #000; font-size: 15px; font-weight: 200; margin: 40px auto 30px;}
+
+.topBtn:hover{transition: all 0.5s; transform: translateY(-15px);}
