@@ -33,6 +33,17 @@ function startCounter() {
         });
     }
 }
+      $('.chart').easyPieChart({
+      barColor: '#2F2F2F',
+      trackColor: '#ccc',
+      scaleColor: '#fff',
+      lineCap: 'butt',
+      lineWidth: 15,
+      size: 150,
+      animate: 1000,
+      onStart: $.noop,
+      onStop: $.noop
+    });
    
 });
 
