@@ -52,8 +52,9 @@
     .con04Info p{font-size: 18px; margin-bottom: 10px;}
     .con04Info h5{font-size: 25px;padding: 50px 0 20px;}
         .advList li{float: left; margin-right: 10px; font-weight: 500;}
-        .skills li{float: left; text-align: center;position: relative; margin-right: 20px;}
+        .skills li{float: left; text-align: center;position: relative; margin-right: 20px; height: 200px;}
         .skills li h6{margin-bottom: 10px;font-size: 14px;}
         .skills li:first-child h6{margin: 14px 0;font-size: 14px;}
         .skills li p{position: absolute; left: 50%; top:55%;margin-left: -20px; margin-bottom: 0;}
 
+.chart {float: left; width: 33.33%; height: 230px; text-align: center;}
