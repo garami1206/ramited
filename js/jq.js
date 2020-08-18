@@ -13,13 +13,25 @@ $(document).ready(function(){
         return false;
     });
 
-    
+/*스크롤이벤트*/
 jQuery(window).scroll(startCounter);
 function startCounter() {
     var hT = jQuery('.skills').offset().top,
         hH = jQuery('.skills').outerHeight(),
         wH = jQuery(window).height();
     if (jQuery(window).scrollTop() > hT+hH-wH) {
+         
+      $('.chart').easyPieChart({
+      barColor: '#2F2F2F',
+      trackColor: '#ccc',
+      scaleColor: '#fff',
+      lineCap: 'butt',
+      lineWidth: 15,
+      size: 150,
+      animate: 1000,
+      onStart: $.noop,
+      onStop: $.noop
+    });
         jQuery(window).off("scroll", startCounter);
         jQuery('.pct').each(function () {
             var $this = jQuery(this);
@@ -33,17 +45,6 @@ function startCounter() {
         });
     }
 }
-      $('.chart').easyPieChart({
-      barColor: '#2F2F2F',
-      trackColor: '#ccc',
-      scaleColor: '#fff',
-      lineCap: 'butt',
-      lineWidth: 15,
-      size: 150,
-      animate: 1000,
-      onStart: $.noop,
-      onStop: $.noop
-    });
-   
+
 });
 
